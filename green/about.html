@@ -19,71 +19,71 @@
         .navbar {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             padding: 10px 20px;
             background: white;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         .logo img {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
         }
         .nav-links {
             display: flex;
             list-style: none;
-            margin-left: 20px;
         }
         .nav-links li {
-            margin-right: 15px;
+            margin-left: 10px;
         }
         .nav-links a {
             text-decoration: none;
             color: #2e7d32;
             font-weight: bold;
+            font-size: 14px;
             transition: 0.3s;
         }
         .nav-links a:hover {
             color: #1b5e20;
         }
         .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
+            max-width: 90%;
+            margin: 20px auto;
+            padding: 15px;
             background: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
         h1 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            font-size: 22px;
         }
         .emoji {
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
-        .mission {
-            margin-top: 20px;
+        .mission, .vision, .team {
+            margin-top: 15px;
         }
         .mission ul {
             list-style-type: none;
             padding: 0;
         }
         .mission li {
-            margin: 10px 0;
+            margin: 8px 0;
             font-weight: bold;
+            font-size: 14px;
         }
-        .vision {
-            margin-top: 20px;
-            font-style: italic;
-        }
-        .team {
-            margin-top: 20px;
+        .vision p, .team p {
+            font-size: 14px;
         }
         .footer {
-            margin-top: 40px;
-            padding: 20px;
+            margin-top: 20px;
+            padding: 15px;
             background: #2e7d32;
             color: white;
             text-align: center;
+            font-size: 14px;
         }
         .footer a {
             color: #c8e6c9;
@@ -92,6 +92,22 @@
         }
         .footer a:hover {
             color: #ffffff;
+        }
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-links {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+            .nav-links li {
+                margin: 5px 0;
+            }
+            .container {
+                max-width: 95%;
+            }
         }
     </style>
 </head>

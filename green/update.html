@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Terbaru - Green Mindset</title>
     <style>
-        body {
+          body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -14,6 +14,7 @@
         .navbar {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             padding: 10px 20px;
             background: white;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -23,14 +24,18 @@
             height: 50px;
             border-radius: 50%;
         }
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
         .nav-links {
-            display: flex;
             list-style: none;
-            margin-left: 20px;
             padding: 0;
+            display: flex;
         }
         .nav-links li {
-            margin-right: 15px;
+            margin: 0 10px;
         }
         .nav-links a {
             text-decoration: none;
@@ -42,13 +47,12 @@
             color: #1b5e20;
         }
         .container {
-            width: 100%;
-            max-width: none;
-            margin: 0;
+            max-width: 800px;
+            margin: auto;
             padding: 20px;
             background: white;
-            box-shadow: none;
-            border-radius: 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         h1 {
             text-align: center;
@@ -67,12 +71,9 @@
         .update-item strong {
             color: #2a472a;
         }
-        .update-item p {
-            margin: 5px 0 0;
-        }
         .footer {
-            margin-top: 40px;
-            padding: 20px;
+            margin-top: 20px;
+            padding: 15px;
             background: #2e7d32;
             color: white;
             text-align: center;
@@ -84,6 +85,29 @@
         }
         .footer a:hover {
             color: #ffffff;
+        }
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: white;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .nav-links li {
+                text-align: center;
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+            }
         }
     </style>
 </head>
