@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Mindset</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin-left: 20px;
+        }
+        .nav-links li {
+            margin-right: 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #2e7d32;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            color: #1b5e20;
+        }
+        .content-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 80px;
+            padding: 80px;
+        }
+        .content-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .content-box h3 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+            font-size: 26px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .content-box img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .content-box img:hover {
+            transform: scale(1.08);
+        }
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #2e7d32;
+            color: white;
+            text-align: center;
+        }
+        .footer a {
+            color: #c8e6c9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/mind.jpg" alt="Green Mindset Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hal1.html">Contents</a></li>
+            <li><a href="galerry.html">Gallery</a></li>
+            <li><a href="update.html">Update</a></li>
+            <li><a href="about.html">About us</a></li>
+        </ul>
+    </nav>
+    <div class="content-container">
+        <div class="content-box">
+            <h3>EDUKASI LINGKUNGAN</h3>
+            <a href="hal2.html"><img src="assets/4.png" alt="Edukasi Lingkungan"></a>
+        </div>
+        <div class="content-box">
+            <h3>SAMPAH JADI UANG</h3>
+            <a href="hal3.html"><img src="assets/1.jpg" alt="Sampah Jadi Uang"></a>
+        </div>
+        <div class="content-box">
+            <h3>KISAH INSPIRATIF</h3>
+            <a href="hal4.html"><img src="assets/2.webp"Kisah Inspiratif"></a>
+        </div>
+        <div class="content-box">
+            <h3>PRODUK DAN INOVASI</h3>
+            <a href="hal5.html"><img src="assets/3.webp" alt="Produk dan Inovasi"></a>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Green Mindset. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

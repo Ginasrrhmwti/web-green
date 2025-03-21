@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampah Jadi Uang</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin-left: 20px;
+        }
+        .nav-links li {
+            margin-right: 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #2e7d32;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            color: #1b5e20;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #2E582C;
+        }
+        h2 {
+            color: #2E582C;
+            text-align: left;
+        }
+        .content {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+        }
+        .content ul {
+            padding-left: 20px;
+        }
+        .content li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        /* Gaya untuk gambar */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .image-gallery img {
+            width: 100%; /* Agar gambar menyesuaikan ukuran container */
+            max-width: 250px; /* Maksimal lebar gambar */
+            height: 180px; /* Menjaga proporsi */
+            object-fit: cover;
+            border-radius: 20px; /* Membuat gambar lebih melengkung */
+            border: 2px solid #ddd;
+        }
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #2e7d32;
+            color: white;
+            text-align: center;
+        }
+        .footer a {
+            color: #c8e6c9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/mind.jpg" alt="Green Mindset Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hal1.html">Contents</a></li>
+            <li><a href="galerry.html">Gallery</a></li>
+            <li><a href="update.html">Update</a></li>
+            <li><a href="about.html">About us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>SAMPAH JADI UANG</h1>
+
+        <!-- GALLERY GAMBAR (2 KOLOM) -->
+        <div class="image-gallery">
+            <img src="assets/plastik1.jpg" alt="Sampah plastik didaur ulang">
+            <img src="assets/bank.jpg" alt="Bank sampah">
+            <img src="assets/produk.jpg" alt="Produk daur ulang">
+            <img src="assets/kompos.png" alt="Komposting sampah organik">
+        </div>
+
+        <div class="content">
+            <h2>Kenapa Sampah Bisa Jadi Uang?</h2>
+            <p>
+                Tahukah kamu bahwa banyak jenis sampah yang bisa didaur ulang dan dijual kembali? 
+                Dengan pengelolaan yang tepat, sampah bukan hanya mengurangi dampak lingkungan, 
+                tetapi juga bisa menjadi sumber penghasilan.
+            </p>
+
+            <h2>Jenis Sampah yang Bisa Dijual</h2>
+            <ul>
+                <li>♻️ <b>Plastik</b>
+                    <ul>
+                        <li>Botol plastik (PET) → Bisa dijual ke bank sampah atau didaur ulang.</li>
+                        <li>Kresek & plastik kemasan → Bisa diolah menjadi paving block atau bahan bakar alternatif.</li>
+                    </ul>
+                </li>
+                <li>📄 <b>Kertas & Karton</b>
+                    <ul>
+                        <li>Kardus bekas → Banyak dibutuhkan oleh industri daur ulang.</li>
+                        <li>Kertas koran & majalah lama → Bisa diolah menjadi kertas daur ulang atau kerajinan tangan.</li>
+                    </ul>
+                </li>
+                <li>🔩 <b>Logam & Besi Tua</b>
+                    <ul>
+                        <li>Kaleng minuman (aluminium) → Sangat bernilai tinggi di tempat daur ulang.</li>
+                        <li>Logam bekas (besi, tembaga, kuningan, dll.) → Bisa dijual ke pengepul logam.</li>
+                    </ul>
+                </li>
+                <li>⚡ <b>Sampah Elektronik (E-Waste)</b>
+                    <ul>
+                        <li>HP & laptop bekas → Banyak startup dan pengepul yang menerima limbah elektronik untuk didaur ulang.</li>
+                        <li>Baterai bekas → Dapat disetor ke program daur ulang khusus.</li>
+                    </ul>
+                </li>
+                <li>🌱 <b>Sampah Organik</b>
+                    <ul>
+                        <li>Sisa makanan & daun kering → Bisa diolah menjadi pupuk kompos dan dijual.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Cara Mendapatkan Uang dari Sampah</h2>
+            <ol>
+                <li>Gabung dengan Bank Sampah → Setorkan sampah dan tukarkan dengan uang atau tabungan.</li>
+                <li>Gunakan Aplikasi Pengelolaan Sampah → Seperti Duitin, Octopus, Rekosistem, eRecycle, Plasticpay.</li>
+                <li>Daur Ulang & Jual Produk Olahan → Contoh: tas dari plastik bekas, kertas daur ulang, furnitur dari kayu bekas.</li>
+                <li>Menjadi Kolektor atau Pengepul → Kumpulkan sampah bernilai dan jual ke pabrik daur ulang.</li>
+                <li>Komposting untuk Dijual → Buat pupuk organik dari sampah dapur dan jual ke petani atau komunitas urban farming.</li>
+            </ol>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Green Mindset. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
